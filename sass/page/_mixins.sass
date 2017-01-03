@@ -1,0 +1,26 @@
+$celular: max-width 440px
+$tablet: max-width 991px
+$celubot: max-width 768px
+$pc: max-width 1200px
+
+$branco: #fff
+$preto: black
+$verde: #8cc63f
+$verde-escuro: #39b54a
+$azul: #1e285c
+$amarelo: #fdce12
+$sombra: #75797a
+$vermelho: red
+
+$open: 300
+$bold: 800
+
+=gradient($angle,$gradient1, $gradient2)
+  background-color: $gradient2 
+  background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
+  background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:      -o-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:         linear-gradient($angle, $gradient1, $gradient2)
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
